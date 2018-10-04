@@ -3,10 +3,8 @@ from pygame.locals import *
 
 pygame.init()
 
-FPS = 30 # frames per second setting
+FPS = 30
 fpsClock = pygame.time.Clock()
-
-# set up the window
 DISPLAYSURF = pygame.display.set_mode((400, 300), 0, 32)
 pygame.display.set_caption('Animation')
 
@@ -16,7 +14,7 @@ catx = 10
 caty = 10
 direction = 'right'
 
-while True: # the main game loop
+while True:
     DISPLAYSURF.fill(WHITE)
 
     if direction == 'right':
